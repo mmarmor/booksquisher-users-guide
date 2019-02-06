@@ -77,7 +77,7 @@ namespace :book do
     rm_rf "wwwroot/images"
     rm_rf "wwwroot/*"
     cp "generated-output/#{book_name}.epub", "wwwroot/#{book_name}.epub"
-    cp "generated-output/#{book_name}.html", "wwwroot/#{book_name}.html"
+    cp "generated-output/#{book_name}.html", "wwwroot/index.html"
     cp "generated-output/#{book_name}.mobi", "wwwroot/#{book_name}.azw3"
     puts "Note: .mobi file was copied with .azw3 extension to wwwroot"
     cp "generated-output/#{book_name}.pdf",  "wwwroot/#{book_name}.pdf"
